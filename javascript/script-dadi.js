@@ -2,10 +2,10 @@
 // 2. Gioco dei dadi
 
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-const nUser = parseInt(Math.random() * 6); //integer number [parseInt] from 1 to 6
-const nCPU = parseInt(Math.random() * 6); //integer number [parseInt] from 1 to 6
-alert('clicca per tirare un dado e scoprire il vincitore')
-
+const nUser = Math.round((Math.random() * 6)); //integer number [parseInt] from 1 to 6
+const nCPU = Math.round((Math.random() * 6)); //integer number [parseInt] from 1 to 6
+//alert('clicca per tirare un dado e scoprire il vincitore')
+console.log(nUser, nCPU)
 console.log(`Il tuo numero: ${nUser}`)
 console.log(`Il numero del tuo avversario: ${nCPU}`)
 
